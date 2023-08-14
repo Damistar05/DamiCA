@@ -137,6 +137,6 @@ def generated_chart2(state):
     fig7 = go.Figure(layout=go.Layout(paper_bgcolor="#95A5A6",plot_bgcolor='#95A5A6'))
     fig7.add_trace(go.Bar(x=dfrm7[mask3]['brand_name'], y=dfrm7['Count']))
     fig7.update_layout(font_color='#040B3E')
-    fig8 = px.treemap(df8[mask4], path=['seller_state', 'seller_city', 'tags'], values='Count',color_continuous_scale='RdBu', title='Location Tree Map')
+    fig8 = px.treemap(dfrm8[mask4], path=['seller_state', 'seller_city', 'tags'], values='Count',color_continuous_scale='RdBu', title='Location Tree Map')
     fig8.update_layout(font_color='#040B3E', paper_bgcolor="rgba(0,0,0,0)", autosize=False, width=650, height=400,)
     return([fig7, fig8])
