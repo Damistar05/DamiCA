@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 from app import app
-import dash_extension as de
+import dash_extensions as de
 
 # external_stylesheets = [dbc.themes.SLATE]
 # app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
